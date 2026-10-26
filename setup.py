@@ -30,7 +30,7 @@ setup(
         'Intended Audience :: Developers',
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
     ],
-    keywords=('soap', 'wsdl', 'wsgi'),
+    keywords=['soap', 'wsdl', 'wsgi'],
     author='Soaplib Contributors',
     author_email='soap@python.org',
     maintainer = 'Burak Arslan',
@@ -41,6 +41,9 @@ setup(
     install_requires=[
       'pytz',
       'lxml>=2.2.1',
+    ],
+    setup_requires=[
+        "pbr",
     ],
     test_suite='tests.test_suite',
 )
